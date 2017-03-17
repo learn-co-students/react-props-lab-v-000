@@ -3,11 +3,12 @@ const React = require('react');
 class Spaceship extends React.Component {
   render() {
     return (
-      <div> 
-        <h1> Shipname: {this.props.name} </h1>
-        <h3> Speed: {this.props.speed} </h3>
-        <h3> Colors: {this.props.colors.join(', ')} </h3>
-      </div>      
+      <div className="movie-card">
+         <h1>{this.props.name}</h1>
+        <p>Speed: {this.props.speed}</p>
+        <p>Has rockets: {this.props.hasRockets ? 'Yes' : 'No'}</p>
+        <p>Colors: {this.props.colors.join(', ')}</p>
+      </div>
     );
   }
 }
@@ -19,4 +20,4 @@ Spaceship.defaultProps = {
 }
 
 
-module.exports = Spaceship
+module.exports =  Spaceship
