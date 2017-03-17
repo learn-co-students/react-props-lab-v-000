@@ -1,16 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+const React = require('react');
 
 class Spaceship extends React.Component {
-  render () {
+  render() {
     return (
-      <Spaceship propName="name">
-        
+      <div> 
+        <h1> Shipname: {this.props.name} </h1>
+        <h3> Speed: {this.props.speed} </h3>
+        <h3> Colors: {this.props.colors.join(', ')} </h3>
+      </div>      
+    );
+  }
+}
 
-      </Spaceship>
+Spaceship.defaultProps = {
+  hasRockets: false,
+  colors: ['black', 'red'],
+  speed: "Really fucking fast bro"
+}
 
-    ) //return 
-  } // render
-} // class
 
-module.exports = Spaceship;
+module.exports = Spaceship
