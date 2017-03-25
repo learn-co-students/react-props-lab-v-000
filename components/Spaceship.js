@@ -1,23 +1,23 @@
-const React = require('react');
+const React = require('react')
 
-class Spaceship extends React.Component {
-  render() {
+
+class SpaceShip extends React.Component {
+  render(){
     return (
-      <div className="movie-card">
-         <h1>{this.props.name}</h1>
-        <p>Speed: {this.props.speed}</p>
-        <p>Has rockets: {this.props.hasRockets ? 'Yes' : 'No'}</p>
-        <p>Colors: {this.props.colors.join(', ')}</p>
+      <div className="SpaceShip">
+        <p> Name: {this.props.name} </p>
+        <p> Speed: {this.props.speed}  </p>
+        <p> Rockets: {this.props.hasRockets ? 'Yes':'No'}</p>
+        <p> Colors: {this.props.colors.join(', ')} </p>
       </div>
     );
   }
 }
 
-Spaceship.defaultProps = {
+SpaceShip.defaultProps = {
   hasRockets: false,
   colors: ['black', 'red'],
-  speed: "Really fucking fast bro"
+  speed: '10000mph'
 }
 
-
-module.exports =  Spaceship
+module.exports = SpaceShip;
