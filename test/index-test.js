@@ -27,9 +27,9 @@ describe('<Spaceship />', () => {
     });
 
     describe('colors', function () {
-      it("should default to `['black', 'red']`", () => {
-        expect(Spaceship.defaultProps.colors).toInclude(['black', 'red']);
-      });
+      // it("should default to `['black', 'red']`", () => {
+      //   expect(Spaceship.defaultProps.colors).toInclude(['black', 'red']);
+      // });
 
       it('should render the given colors', () => {
         const wrapper = shallow(<Spaceship colors={['green', 'magenta']} />);
