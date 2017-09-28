@@ -7,3 +7,5 @@ ReactDOM.render(
   <Spaceship name="Millennium Falcon" />,
   document.getElementById('root')
 );
+
+document.body.style.backgroundColor = "green"
