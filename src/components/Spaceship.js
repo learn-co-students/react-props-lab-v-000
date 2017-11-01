@@ -6,8 +6,10 @@ export default class Spaceship extends React.Component {
 			<div>
 				<h1>Name: {this.props.name}</h1>
 				<p>Speed: {this.props.speed}</p>
+				<p>Rockets: {this.props.hasRockets ? "Yes" : "No"}</p>
 				<p>Colors: {this.props.colors.join(', ')}</p>
 			</div>
+
 		);
 	}
 };
