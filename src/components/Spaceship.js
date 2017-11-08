@@ -2,14 +2,15 @@ import React from 'react';
 
 export default class Spaceship extends React.Component {
   render() {
-   return (
-     <div className="spaceship">
-       <h1>{this.props.name}</h1>
-       <p>Speed: {this.props.speed}</p>
-       <p>Has rockets: {this.props.hasRockets} ? 'Yes' : 'No' </p>
-       <p>Colors: {this.props.colors.join(', ')}</p>
-     </div>
-   );
+    const { name, speed, hasRockets, colors } = this.props;
+      return (
+       <div className="spaceship">
+         <h1>{name}</h1>
+         <p>Speed: {speed}</p>
+         <p>Has rockets: {hasRockets} ? 'Yes' : 'No' </p>
+         <p>Colors: {colors.join(', ')}</p>
+       </div>
+      );
  }
 }
 
