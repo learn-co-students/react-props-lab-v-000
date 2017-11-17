@@ -18,11 +18,3 @@ Spaceship.defaultProps = {
 	hasRockets: false,
 	colors: ["black", "red"]
 }
-
-
-
-
-// name (string)
-// speed (number, defaults to slow)
-// hasRockets (boolean, defaults to false)
-// colors (array of strings, defaults to ['black', 'red'])
