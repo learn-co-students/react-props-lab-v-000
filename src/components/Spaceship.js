@@ -2,12 +2,16 @@ import React from 'react'
 	
 export default class Spaceship extends React.Component {
 	render() {
+		const { name, speed, hasRockets, colors } = this.props;
+
 		return (
 			<div className="space-ship">
-				<p>Name: {this.props.name}</p>
-				<p>Speed: {this.props.speed}</p>
-				<p>Rockets: {this.props.hasRockets}</p>
-				<p>Colors: {this.props.colors}</p>
+				<p>Name: {name}</p>
+				<p>Speed: {speed}</p>
+				<p>Rockets: {hasRockets}</p>
+				<ul>
+          {colors.map((color) => <li>{color}</li>)}
+        </ul>
 			</div>
 		)
 	}
