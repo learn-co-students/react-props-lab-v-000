@@ -20,4 +20,11 @@ Spaceship.defaultProps = {
   colors: ['black', 'red']
 };
 
+Spaceship.propTypes = {
+  name: PropTypes.string,
+  hasRockets: Proptypes.bool,
+  speed: PropTypes.number,
+  colors: PropTypes.array
+}
+
 export default Spaceship;
