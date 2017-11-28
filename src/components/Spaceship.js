@@ -21,4 +21,8 @@ Spaceship.defaultProps = {
   speed: 'slow'
 }
 
+Spaceship.propTypes = {
+  
+}
+
 export default Spaceship;
