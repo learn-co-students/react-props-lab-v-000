@@ -9,7 +9,7 @@ ReactDOM.render(
   <Spaceship
     name="Millennium Falcon"
     speed="10"
-    // hasRockets="true"
+    hasRockets={true}
     colors={spaceshipColors}
   />,
   document.getElementById('global')
