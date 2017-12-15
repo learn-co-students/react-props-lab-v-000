@@ -7,8 +7,8 @@ class Spaceship extends React.Component {
       <div>
         <h1>{this.props.name}</h1>
         <h3>{this.props.speed}</h3>
-        <h3>{this.props.hasRockets}</h3>
-        <h3>{this.props.colors.join(', ')}</h3>
+        <h3>Does it have rockets? {this.props.hasRockets}</h3>
+        <h3>Colors: {this.props.colors.join(', ')}</h3>
       </div>
     )
   }
