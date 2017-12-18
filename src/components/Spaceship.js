@@ -19,7 +19,7 @@ Spaceship.defaultProps = {
 Spaceship.propTypes = {
   name: PropTypes.string.isRequired,
   speed: PropTypes.number,
-  hasRockets: PropTypes.bool.isRequired,
+  hasRockets: PropTypes.bool,
   colors: PropTypes.arrayOf(PropTypes.string),
 };
 
