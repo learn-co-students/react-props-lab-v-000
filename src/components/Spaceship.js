@@ -17,10 +17,6 @@ export default class Spaceship extends React.Component {
   }
 };
 
-// OR declare your component first, and then ie:
-// class Spaceship extends React.Component { info };
-// export default Spaceship;
-
 Spaceship.defaultProps = {
   speed:'slow',
   hasRockets: false,
