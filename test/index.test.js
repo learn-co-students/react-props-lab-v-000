@@ -6,7 +6,7 @@ import Spaceship from '../src/components/Spaceship';
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('<Spaceship />', () => {
+describe('<Spaceship! />', () => {
 
   describe('Props', () => {
 
