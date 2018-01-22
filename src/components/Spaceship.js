@@ -5,7 +5,7 @@ export default class Spaceship extends React.Component {
   render() {
     const { name, speed, hasRockets, colors } = this.props;
     return (
-      <div className="movie-card">
+      <div>
         <h1>Name: {name} </h1>
         <p>Ship Specs:</p>
           <p>Speed: {speed} </p>
