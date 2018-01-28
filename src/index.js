@@ -17,6 +17,9 @@ ReactDOM.render(
       speed="fast"
       hasRockets="true"
       colors={['silver','gray']}/>
+    <Spaceship
+      name="Jenny"
+      colors={['white','dull gray']}/>
   </table>,
 
   document.getElementById('global')
