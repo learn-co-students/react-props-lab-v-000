@@ -5,10 +5,13 @@ export default class Spaceship extends React.Component {
   render() {
     return (
       <div>
-        <h1>{this.props.name}</h1>
+        <h1>Spaceship Name: {this.props.name}</h1>
+        <p>Ship Info:</p>
         <p>{this.props.speed}</p>
         <p>{this.props.hasRockets}</p>
-        <p>{this.props.colors}</p>
+        <ul>
+          {this.props.colors}.map(color => <li>color</li>)
+        </ul>
       </div>
     )
   }
