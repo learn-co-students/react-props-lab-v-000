@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom';
 import Spaceship from './components/Spaceship';
 
 ReactDOM.render(
-  <Spaceship name="Millennium Falcon" />,
+  <div>
+    <Spaceship name="Millennium Falcon" />
+    <Spaceship name={'teribble ship'.toUpperCase()}/>
+  </div>,
   document.getElementById('global')
 );
