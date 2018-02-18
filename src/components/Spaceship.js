@@ -9,7 +9,7 @@ export default class Spaceship extends React.Component {
         <h1>{this.props.name}</h1>
         <h3>Details</h3>
         <p>Speed: {this.props.speed}</p>
-        <p>Has Rockets?: {this.props.hasRocket}</p>
+        <p>Has Rockets?: {this.props.hasRockets}</p>
         <p>Colors: {this.props.colors.join(', ')}</p>
       </div>
     )
@@ -18,7 +18,7 @@ export default class Spaceship extends React.Component {
 
  Spaceship.defaultProps = {
    speed: 'slow',
-   hasRocket: false,
+   hasRockets: false,
    colors: ['black', 'red']
  }
 // OR declare your component first, and then:
