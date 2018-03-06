@@ -1,5 +1,5 @@
 // Code The Spaceship Component Here
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import React from 'react';
 
 export default class Spaceship extends React.Component {
