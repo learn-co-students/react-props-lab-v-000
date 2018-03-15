@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const colorsArray = ['black', 'red'];
-
 export default class Spaceship extends React.Component {
   render() {
+    const { name, speed, hasRockets, colors } = this.props;
     return (
-      <div className="spaceship">
-        <h1>{this.props.name}</h1>
-        <p>{this.props.speed}</p>
-        <p>{this.props.hasRockets}</p>
-        <p>{this.props.colors}</p>
-
+      <div>
+        <h1>Spaceship Name: {name}</h1>
+        <p>Speed: {speed}</p>
+        <p>Rockets? {hasRockets ? "Yes" : "No"} </p>
+        Colors:
+        <ul> 
+          {colors.map((color) => <li>{color}</li>)}
+        </ul>
       </div>
     );
   }
@@ -20,7 +21,7 @@ export default class Spaceship extends React.Component {
 Spaceship.defaultProps = {
   speed: 'slow',
   hasRockets: false,
-  colors: 'black, red'
+  colors: ['black, red']
 };
  
 
