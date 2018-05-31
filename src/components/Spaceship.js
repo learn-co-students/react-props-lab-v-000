@@ -13,11 +13,10 @@ export default class Spaceship extends React.Component {
       </div>
     )
   }
-  
-  Spaceship.defaultProps = {
-    speed:'slow'
-    hasRockets: false
-    colors: ['black', 'red']
-  }
+}
 
+Spaceship.defaultProps = {
+  speed:'slow',
+  hasRockets: false,
+  colors: ['black', 'red']
 }
