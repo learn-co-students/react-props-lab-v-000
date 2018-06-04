@@ -21,12 +21,13 @@
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.1",
     "expect": "^21.2.1",
+    "mocha-multi": "^1.0.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "sinon": "^1.17.7"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start --host 0.0.0.0",
     "build": "react-scripts build",
     "test": "mocha -w test/helpers.js test/*.js",
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
