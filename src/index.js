@@ -1,9 +1,14 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import React from 'react';
+
 
 import Spaceship from './components/Spaceship';
 
+
+
 ReactDOM.render(
-  <Spaceship name="Millennium Falcon" />,
+  <Spaceship 
+  	name="Millennium Falcon"
+  />,
   document.getElementById('global')
 );
