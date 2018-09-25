@@ -9,7 +9,9 @@ export default class Spaceship extends React.Component {
       <p>{ this.props.name }</p>
       <p>{ this.props.speed }</p>
       <p>{ this.props.hasRockets }</p>
-      <p>{ this.props.colors }</p>
+      <ul>
+        { this.props.colors.map((color, index) => <li>{color}</li> )}
+      </ul>
       </div>
     )
   }
