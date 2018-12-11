@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default class Spaceship extends React.Component {
 	render() {
@@ -21,4 +22,10 @@ Spaceship.defaultProps = {
 	speed: 'slow',
 	hasRockets: false,
 	colors: ['black', 'red']
+}
+
+Spaceship.propTypes = {
+  name: PropTypes.string,
+  hasRockets: PropTypes.bool,
+  colors: PropTypes.arrayOf(PropTypes.string)
 }
